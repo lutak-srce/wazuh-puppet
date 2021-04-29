@@ -109,7 +109,7 @@ class wazuh::params_agent {
 
       $keys_file = '/var/ossec/etc/client.keys'
       $keys_mode = '0640'
-      $keys_owner = 'root'
+      $keys_owner = 'ossec'
       $keys_group = 'ossec'
 
       $validate_cmd_conf = '/var/ossec/bin/verify-agent-conf -f %'
