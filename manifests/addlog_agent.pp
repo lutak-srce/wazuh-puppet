@@ -7,6 +7,7 @@ define wazuh::addlog_agent(
   $commandalias = undef,
   $frequency    = undef,
   $target_arg   = 'agent_ossec.conf',
+  $exclude   = undef,
 ) {
   require wazuh::params_agent
 

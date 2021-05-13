@@ -10,6 +10,9 @@
   <%- if @commandalias -%>
   <alias><%= @commandalias %> </alias>
   <%- end -%>
+  <%- if @exclude -%>
+  <exclude><%= @exclude %></exclude>
+  <%- end -%>
   <%- if @frequency -%>
   <frequency><%= @frequency %></frequency>
   <%- end -%>
