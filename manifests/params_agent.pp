@@ -291,7 +291,7 @@ class wazuh::params_agent {
       case $::osfamily {
         'Debian': {
           $service_has_status = false
-          $ossec_service_provider = undef
+          $ossec_service_provider = 'systemd'
 
           $default_local_files = [
             { 'location' => '/var/log/syslog', 'log_format' => 'syslog' },
